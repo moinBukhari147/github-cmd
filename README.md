@@ -65,7 +65,7 @@ Git reflog is your private, local undo/redo history, tracking every change you m
 Use git reflog to recover from mistakes or see all local changes, even those not in the current branch history.
 
 
-- View Log history 2nd Methods
+- #### View Log history 2nd Methods
 
 ```bash
    git log
@@ -73,19 +73,19 @@ Use git reflog to recover from mistakes or see all local changes, even those not
 Git log is the public, polished history of your project.
 Use git log to see the official commit history; 
 
-- Hard reset
+- #### Hard reset
 
 ```bash
    git reset --hard 82497d1
 ```
 To reset branch back to that state: your [state_id]
 
-- To view your commit history in a simple and compact format.
+- #### To view your commit history in a simple and compact format.
 
 ```bash
    git log --oneline
 ```
-- View Visual Commit History Across All Branches
+- #### View Visual Commit History Across All Branches
   
 ```bash
    git log --oneline --graph --all --decorate
@@ -94,37 +94,37 @@ Shows a compact, visual representation of the entire Git commit history, includi
 
 ### Diff
 
-- Check unstaged changes
+- #### Check unstaged changes
 ```bash
    git diff
 ```
 Shows changes in your working directory not yet staged for commit.
 
-- Check staged changes (before committing)
+- #### Check staged changes (before committing)
 ```bash
    git diff --staged
 ```
 Shows changes that have been staged using git add but not committed yet.
 
-- Compare your local branch with the last commit
+- #### Compare your local branch with the last commit
 ```bash
    git diff HEAD
 ```
 Shows all changes (both staged and unstaged) compared to the latest commit.
 
-- Compare two branches
+- #### Compare two branches
 ```bash
    git diff branchA..branchB
 ```
 Shows changes in branchB that are not in branchA.
 
-- Compare two commits
+- #### Compare two commits
 ```bash
    git diff commit1 commit2
 ```
 Shows differences between two specific commits.
 
-- Compare specific files
+- #### Compare specific files
 ```bash
    git diff HEAD path/to/file.js
 ```
@@ -132,37 +132,37 @@ Shows changes in a specific file compared to the last commit.
 
 ### Stash
 
-- Stash your changes
+- #### Stash your changes
 ```bash
    git stash
 ```
 Git stash temporarily shelves (or "stashes") uncommitted changes in your working directory so you can, Switch branches, Pull/rebase, Work on something else Without committing or losing your work.
 
-- List all stashes
+- #### List all stashes
 ```bash
   git stash list
 ```
 
-- Apply the latest stash
+- #### Apply the latest stash
 ```bash
   git stash apply
 ```
 Keeps the stash in stash list (does not remove it)
 
--  Apply and remove the stash
+-  #### Apply and remove the stash
 ```bash
   git stash pop
 ```
 Applies and removes the latest stash
--  Apply a specific stash
+-  #### Apply a specific stash
 ```bash
   git stash apply stash@{1}
 ```
--  Drop (delete) a stash
+-  #### Drop (delete) a stash
 ```bash
   git stash drop stash@{0}
 ```
--  Clear all stashes
+-  #### Clear all stashes
 ```bash
   git stash clear
 ```
