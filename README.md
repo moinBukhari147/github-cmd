@@ -56,7 +56,7 @@ Use meaningful branch names, like yourname/login-screen or collab/otp-bugfix.
 
 ## Ohter Commands
 
-- View Log history
+- #### View Log history
 
 ```bash
    git reflog
